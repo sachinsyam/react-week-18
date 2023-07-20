@@ -1,12 +1,21 @@
 import React from 'react';
 import './App.css';
+import InputField from './components/InputField';
 
 let name:string = 'Sachin';
-function App() {
+// functional component
+const App: React.FC = ()=>{
+
+
+
+  
   return (
-    
-      <p>hello</p>
-    
+    <div className="App">
+      <span className="heading">
+        Taskify
+      </span>
+      <InputField/>
+    </div>
   );
 }
 
